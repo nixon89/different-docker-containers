@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # run netdata on localhost:19999
 docker run -d --rm --name=netdata \
  -p 19999:19999 \
