@@ -7,7 +7,7 @@ docker run \
   --rm \
   --detach \
   --publish 8086:8086 \
-  --env INFLUXDB_ADMIN_ENABLED=true \
+  --env-file configuration.env \
   --publish 8083:8083 \
   --name influxdb \
   influxdb
